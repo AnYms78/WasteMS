@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <style>
+        #popup{
+            width: 400px; height: 400px;background-color: rgb(105, 183, 255);
+            text-align:center;padding:18px;color: rgb(15, 6, 6);border-radius: 8px;
+            position: relative;
+        }
+        .hide{display: none;}
+        .show{display: flex;}
+        #btn{
+            right: 5px;
+            top: 5px;
+            border-radius: 50%;
+            border: 0;
+            cursor: pointer;
+        }
+        #btn:hover{
+           
+           background-color: rgb(179, 53, 22);
+        }
+    </style>
+    <div id="popup">
+        <div>
+            <div>
+                <button id="btn" style="position: absolute;">&times;</button>
+            </div>
+           
+            <h2>TOPPER!!!!</h2>
+            <img src="pk.jpg" alt="" height="200px" >
+            <p>Halo gais this me sumitwa aka pk straight from manamaiju, itahari.
+            </p>
+            <button>Join Now</button>
+        </div>
+    </div>
+    <script>
+
+        var popup=document.getElementById('popup');
+        popup.classList.add('hide')
+        setTimeout(function(){
+            popup.classList.add('show')
+            // popup.classList.remove('hide')//this will remove hide class 
+        },2000);
+
+        var btn=document.getElementById('btn');
+        btn.addEventListener('click',function()
+        {
+           popup.remove();
+        })
+        
+    </script>
+</body>
+</html>

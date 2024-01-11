@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><b>Counter::</b> <span id="countArea" data-count="0">0</span></div>
+    <button id="inc">Increment</button>
+    
+    <script>
+        var inc = document.getElementById('inc');
+        var countArea = document.getElementById('countArea');
+
+        var count = countArea.getAttribute('data-count');
+        inc.addEventListener('click', function(){
+           count++;
+           countArea.innerHTML = count;
+
+        })
+    </script>
+</body>
+</html>

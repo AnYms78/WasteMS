@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+
+<body>
+    <div class="contents">
+        <div class="nav">
+            <nav>
+                <div class="logo"><img src="./assets/thapa collection.jpg" alt="logo">ThapaCollection</div>
+                <div class="assets">
+
+                    <ul class="nav-link">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#" id="category">CATEGORY<svg id="drop-arrow"
+                                    class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1" />
+                                </svg></a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <div class="shoppingCart">
+                            <span class="added-cart">0</span>
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white icon" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                            </svg>
+                        </div>
+                        <div class="noti">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white icon" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 21">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M8 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C15 15.4 15 16 14.462 16H1.538C1 16 1 15.4 1 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 8 3.464ZM4.54 16a3.48 3.48 0 0 0 6.92 0H4.54Z" />
+                            </svg>
+                        </div>
+                        <div class="search">
+                            <input id="search-bar" type="search" class="search-bar" placeholder="Search">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white icon search-icon" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="categories">
+            <div class="category-cont">
+                <div class="cat-product"><img src="./assets/winter wears.jpg" alt="for men">
+                    <h2>Winter Wears</h2><button>See More &gt;&gt;</button>
+                </div>
+                <div class="cat-product"><img src="./assets/jockers.jpg" alt="jockers">
+                    <h2>Jockers</h2><button>See More &gt;&gt;</button>
+                </div>
+                <div class="cat-product"><img src="./assets/puffer jacket.jpg" alt="Guitars">
+                    <h2>Puffer jackets</h2><button>See More &gt;&gt;</button>
+                </div>
+                <!-- <div class="cat-product"><img src="elec.png" alt="Electronics">
+                    <h2>Electronics</h2><button>See More &gt;&gt;</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="main">
+            <div class="slider">
+                <img src="" alt="slider" id="img-slider" height="400" width="600">
+            </div>
+            <div class="products">
+                
+                <div class="item2 product">
+                    <img src="./assets/jacket.jpg" alt="sale item" class="prod-img">
+                    <h3>Jacket</h3><h4>RS 4000</h4></h2><button class="addCart">Add to cart</button>
+                </div>
+                <div class="item3 product">
+                    <img src="./assets/jockers.jpg" alt="sale item" class="prod-img">
+                    <h3>Pant</h3><h4>RS 3500</h4><button class="addCart">Add to cart</button>
+                </div>
+                <div class="item1 product">
+                    <img src="./assets/hoodie.jpg" alt="sale item" class="prod-img">
+                    <h3>Hoodie</h3><h4>RS 5000</h4>
+                    <button class="addCart">Add to cart</button>
+                </div>
+                <div class="item4 product">
+                    <img src="./assets/shoes.jpg" alt="sale item" class="prod-img">
+                    <h3>NIKE Air Jordan</h3><h4>RS 5000</h4><button class="addCart">Add to cart</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <div class="popup">
+        <div class="card hide">
+            <h1 class="cross">5</h1>
+
+            <h2 class="title">Black Friday Sale</h2>
+            <img class="popup-img" src="./assets/black friday.png" alt="" height="200">
+            <button class="join-title">Explore</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
